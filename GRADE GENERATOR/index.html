@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Generator</title>
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <form id="grade-form">
+        <nav>
+            <div class="innernav">
+                <ul type="none">
+                    <li class="active" id="home">Home</li>
+                    <li id="details">Details</li>
+                    <li id="delete">Delete</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="outer" id="outer">
+            <div class="dote">
+                <div class="dote1"></div>
+                <div class="dote1"></div>
+                <div class="dote1"></div>
+            </div>
+            <h1>Grade Generator</h1>
+            <div class="inner">
+                <div class="nouser">
+                    <input class="entersub" type="number" id="subjects" placeholder="Enter number of subjects"/>
+                    <button type="button" class="generate" id="enter" onclick="createInputBoxes()">Enter</button>
+                </div>
+                <div id="newinput"></div>
+                <div id="marks"></div>
+                <div id="results"></div>
+            </div>
+        </div>
+        <div class="saved-result" id="saved-result"></div>
+    </form>
+    <script src="./js/project.js"></script>
+</body>
+</html>
